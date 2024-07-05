@@ -784,13 +784,19 @@ require('lazy').setup({
     end,
   },
 
+  --{
+  --  'polirritmico/monokai-nightasty.nvim',
+  --  lazy = false,
+  -- priority = 1000,
+  --  init = function()
+  --    vim.cmd.colorscheme 'monokai-nightasty'
+  --  end,
+  --},
   {
-    'polirritmico/monokai-nightasty.nvim',
+    'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000,
-    init = function()
-      vim.cmd.colorscheme 'monokai-nightasty'
-    end,
+    opts = {},
   },
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
